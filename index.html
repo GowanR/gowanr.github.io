@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Acme Motorwerks MFG</title>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <div class="container" style="padding:10px;">
+      <div class="jumbotron" style="background-color: #332B29;padding:1px;">
+          <div style="padding-left:20px;">
+            <h1 style="color:white;">Acme Motorwerks Fabrication</h1>
+            <p style="color:white;">A no compromise garage.</p>
+          </div>
+      </div>
+    </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="machine">plasma table</div>
+          </div>
+          <div class="col-md-4">
+            <div class="machine">lathe</div>
+          </div>
+          <div class="col-md-4">
+            <div class="machine">sheet metal break</div>
+          </div>
+          <div class="col-md-4">
+            <div class="machine">honing machine</div>
+          </div>
+          <div class="col-md-4">
+            <div class="machine">louvers</div>
+          </div>
+          <div class="col-md-4">
+            <div class="machine">shaper</div>
+          </div>
+      </div>
+    <script>
+    function cap_fst(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+    }
+    var get_machine = function ( name ) {
+      return `
+                <center>
+                  <a href=\"mailto:gowan@acmemotorwerks.com?Subject=` + cap_fst(name) + " Order" + `\" target="_top" style="text-decoration: none;">
+                    <div class="card">
+                      <img src="./` + name + `.jpg" class="sized">
+                      <h1>` + cap_fst(name) + `<h1>
+                  </div>
+                  </a>
+                  </center>
+                `;};
+    $(".machine").each( function () {
+      $(this).html( get_machine(this.innerText) );
+    });
+    </script>
+  </body>
+</html>
