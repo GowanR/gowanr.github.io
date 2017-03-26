@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Acme Motorwerks MFG</title>
+    <title>Gowan Rowland</title>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
@@ -13,56 +14,171 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <script src="js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
 
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  </head>
-  <body>
+<body>
     <div class="container" style="padding:10px;">
-      <div class="jumbotron" style="background-color: #332B29;padding:1px;">
-          <div style="padding-left:20px;">
-            <h1 style="color:white;">Acme Motorwerks Fabrication</h1>
-            <p style="color:white;">A no compromise garage.</p>
-          </div>
-      </div>
-    </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="machine">plasma table</div>
-          </div>
-          <div class="col-md-4">
-            <div class="machine">lathe</div>
-          </div>
-          <div class="col-md-4">
-            <div class="machine">sheet metal break</div>
-          </div>
-          <div class="col-md-4">
-            <div class="machine">honing machine</div>
-          </div>
-          <div class="col-md-4">
-            <div class="machine">louvers</div>
-          </div>
-          <div class="col-md-4">
-            <div class="machine">shaper</div>
-          </div>
-      </div>
-    <script>
-    function cap_fst(string) {
-    return string.charAt(0).toUpperCase() + string.slice(1);
-    }
-    var get_machine = function ( name ) {
-      return `
+        <div class="jumbotron">
+            <center>
+                <img src="./img/profile.JPG" class="img-responsive img-circle" alt="Profile Picture" width="304" height="236">
+                <h1>Gowan Rowland</h1>
+                <p>Scottsdale, Arizona</p>
+            </center>
+        </div>
+        <center>
+            <div class="btn-group" role="group" aria-label="...">
+                <a href="#projects"><button type="button" class="btn btn-default"> <span class="glyphicon glyphicon-globe"></span> Projects</button></a>
+                <a href="./Resume.pdf"><button type="button" class="btn btn-default"> <span class="glyphicon glyphicon-list-alt"></span> Resume</button></a>
+                <a href="#connect"><button type="button" class="btn btn-default"> <span class="glyphicon glyphicon-heart"></span> Connect</button></a>
+            </div>
+            <hr>
+        </center>
+        <div class="container-fluid">
+            <div class="well">
+                <h1 id="projects">Projects</h1>
+                <br>
+
+
+                <!-- Rust Optimization -->
+                <div class="media">
+                    <div class="media-left">
+                        <img src="./img/ackley.jpg" class="media-object img-circle" style="width:130px">
+                    </div>
+                    <div class="media-body">
+                        <h3 class="media-heading">Rust-Opt</h3>
+                        <p>Rust-Opt is an n-dimentional genetic particle swarm optimizer written in Rust. The algorithm uses genetic selection to meta-optimize the genetic particle swarm algorithm. Can operate under the following benchmarkes in n-dimentions:
+                            Rastrigin, Sphere, Rosenbrock, McCormick, Ackley, and DropWave. Also implements a few other optimization algorithms to compare preformance.
+                        </p>
+
+                    </div>
+                    <p>
+                        <center><a class="btn btn-primary btn-lg" href="https://github.com/GowanR/rust-opt" role="button"><span class="glyphicon glyphicon-link"></span> Learn More</a></center>
+                    </p>
+                </div>
+                <hr>
+                <!-- Java PID -->
+                <div class="media">
+                    <div class="media-body">
+                        <h3 class="media-heading">pid-java</h3>
+                        <p>
+                            A highly configurable PID controller written in Java. Includes some features to prevent integral windup, steady state error checking within a tolerance, and the ability to recursivly ramp setpoints. This is made for the FIRST Robotics Competition for
+                            teams who want a little more control, but don't have the money for Talon-SRXs.
+                        </p>
+                    </div>
+                    <div class="media-right">
+                        <img src="./img/pid-java.png" class="media-object img-circle" style="width:130px">
+                    </div>
+                    <p>
+                        <center><a class="btn btn-primary btn-lg" href="https://github.com/GowanR/pid-java" role="button"><span class="glyphicon glyphicon-link"></span> Learn More</a></center>
+                    </p>
+
+                </div>
+
+                <hr>
+                <!-- Saber Vision -->
+                <div class="media">
+                    <div class="media-left">
+                        <img src="./img/vision.png" class="media-object img-circle" style="width:130px">
+                    </div>
+                    <div class="media-body">
+                        <h3 class="media-heading">Saber Vision</h3>
+
+                        <p>
+                            Sabercat Robotics Vision Processing Utilities is a general purpose vision processor written for use in the FIRST Robotics Competition. There are two clients avalible
+                        </p>
+                    </div>
+                    <p>
+                        <center><a class="btn btn-primary btn-lg" href="https://github.com/Sabercat-Robotics-4146-FRC/Vision_Processing-2016" role="button"><span class="glyphicon glyphicon-link"></span> Learn More</a></center>
+                    </p>
+                </div>
+                <hr>
+                <!-- 2017 Robot -->
+
+                <div class="media">
+                    <div class="media-body">
+                        <h3 class="media-heading">2017 FRC Robot</h3>
+                        <p>
+                            Led the design, fabrication, and programming of Sabercat Robotic's 2017 FRC robot. Spent hundreds of ours on Solidworks, tuning PID controllers, and manufacturing parts. Currently reworking the design for second competition, and tuning some more PID controllers.
+                        </p>
+                    </div>
+                    <div class="media-right">
+                        <img src="./img/2017-robot.JPG" class="media-object img-circle" style="width:130px">
+                    </div>
+                    <p>
+                        <center>
+                            <a class="btn btn-primary btn-lg" href="https://github.com/Sabercat-Robotics-4146-FRC/Robot_Code-2017" role="button"><span class="glyphicon glyphicon-link"></span> Code</a>
+                            <a class="btn btn-primary btn-lg" href="https://github.com/Sabercat-Robotics-4146-FRC/Master-CAD-2017" role="button"><span class="glyphicon glyphicon-link"></span> CAD</a>
+                        </center>
+                    </p>
+                </div>
+                <hr>
+
+                <!-- 2016 Robot -->
+
+                <div class="media">
+                    <div class="media-left">
+                        <img src="./img/2016-robot.jpg" class="media-object img-circle" style="width:130px">
+                    </div>
+                    <div class="media-body">
+                        <h3 class="media-heading">2016 FRC Robot</h3>
+
+                        <p>
+                            Worked as lead mechanical engineer. Competed to the world championship in St. Louis for the second time. Developed an asynchronous event loop for the Arizona State Championship. Developed high frequency vision feedback system for this robot.
+                        </p>
+                    </div>
+                    <p>
+                        <center>
+                            <a class="btn btn-primary btn-lg" href="https://github.com/Sabercat-Robotics-4146-FRC/Robot_Code-2016" role="button"><span class="glyphicon glyphicon-link"></span> Code</a>
+                            <a class="btn btn-primary btn-lg" href="https://github.com/Sabercat-Robotics-4146-FRC/Robot_Cad-2016" role="button"><span class="glyphicon glyphicon-link"></span> CAD</a>
+                        </center>
+                    </p>
+
+                </div>
+                <hr>
+
+                <!-- Volunteer -->
+                <div class="media">
+                    <div class="media-body">
+                        <h3 class="media-heading">Volunteer Work</h3>
+                        <p>
+                            Volunteered in many STEM related educational programs. Including help mentoring an FLL team, VEX IQ team, VEX EDR team, as well as volunteering at VEX EDR and FLL tournaments. Has worked as Head Robot Design Judge for FLL on multiple occasions. Also volunteers
+                            to teach high school student how to code throught the Saguaro Code Club. Continues service to young engineers.
+                        </p>
+                    </div>
+                    <div class="media-right">
+                        <img src="./img/volunteer.jpg" class="media-object img-circle" style="width:130px">
+                    </div>
+                    <p>
+                        <center>
+                            <a class="btn btn-primary btn-lg" href="http://www.firstlegoleague.org/" role="button"><span class="glyphicon glyphicon-link"></span> FLL</a>
+                        </center>
+                    </p>
+                </div>
+            </div>
+            <br>
+            <div id="connect">
                 <center>
-                  <a href=\"mailto:gowan@acmemotorwerks.com?Subject=` + cap_fst(name) + " Order" + `\" target="_top" style="text-decoration: none;">
-                    <div class="card">
-                      <img src="./` + name + `.jpg" class="sized">
-                      <h1>` + cap_fst(name) + `<h1>
-                  </div>
-                  </a>
-                  </center>
-                `;};
-    $(".machine").each( function () {
-      $(this).html( get_machine(this.innerText) );
-    });
-    </script>
-  </body>
+                    <p>
+                        <a class="btn btn-primary btn-lg" href="https://github.com/GowanR" role="button"><span class="glyphicon glyphicon-console"></span> GitHub</a>
+                        <a class="btn btn-primary btn-lg" href="https://www.linkedin.com/in/gowan-rowland-511b19132/" role="button"><span class="glyphicon glyphicon-user"></span> LinkedIn</a>
+                        <a class="btn btn-primary btn-lg" href="mailto:gowan.rowland@gmail.com?Subject=Connect" role="button"><span class="glyphicon glyphicon-envelope"></span>  E-Mail</a>
+
+                    </p>
+                </center>
+
+            </div>
+        </div>
+        <br>
+        <footer>
+            <center>
+                <p style="color:white;">60k+ source lines of code and counting.</p>
+                <p style="color:white;">© 2017 Gowan Rowland</p>
+            </center>
+
+        </footer>
+    </div>
+</body>
+
 </html>
