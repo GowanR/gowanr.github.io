@@ -7,6 +7,21 @@ body {
 
   transition: background-color 0.5s ease;
 }
+button {
+  background-color: rgba(0,0,0,0);
+  border: solid;
+  border-radius: 0px;
+  border-color: black;
+  border-width: 1px;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-style: normal;
+}
+.c-container p {
+  max-width: 15vw;
+}
 .main-container {
   position:relative;
   width: 90vw:
@@ -87,7 +102,7 @@ table {
   margin-right: 2vw
 }
 table, th, td  {
-  border: 1px solid black;
+  border: 0.1vw solid black;
   border-collapse: collapse;
 }
 th, td {
