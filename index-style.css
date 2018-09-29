@@ -123,6 +123,7 @@ th, td {
 }
 .code-table a {
   text-decoration: none;
+  color: white;
 }
 .code-table a:hover {
   text-decoration: underline;
