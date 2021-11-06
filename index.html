@@ -1,169 +1,251 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>G M Rowland</title>
-    <link rel="stylesheet" href="./index-style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gowan Rowland</title>
+</head>
+<body>
+  <div class="about">
+  <h1>Gowan Michael Rowland</h1>
+  <hr>
+  <p>
+    <span class="firstcharacter">I</span> study Electrical Engineering at Arizona State University and I conduct research as the Mechanical Engineering Student Lead at <a href="https://theluminositylab.com/" target="_blank">The Luminosity Lab</a>.
+    My two loves are engineering and math. My focus is at the crossroads of mechanical, electrical, and software engineering. I’ve worked on a plethora of projects at The Luminosity Lab over the past three years which I believe perfectly demonstrate my wide range of interests and skills. 
+  </p>
+  <hr>
+  </div>
+  <div class="container">
 
-  </head>
-  <body>
-    <div class="main-container">
-    <div class="flex-container">
-      <div title="4146 2018" class="flex-container c-container">
-          <div><img src="./20184146-0.PNG" alt="4146 2018"></div>
-          <p>FRC 4146's 2018 robot ranked 12 and recieved Excellence in Engineering Award in turing division at Houson champoinships. I was a primary technical mentor.<br>
-            <a href="https://github.com/Sabercat-Robotics-4146-FRC/CAD-Design" target="_blank"><button>CAD</button></a>
-            <a href="https://www.youtube.com/watch?v=NtaEmtORKNA" target="_blank"><button>VIDEO</button></a>
-          </p>
-      </div>
-
-      <div title="4146 2017" class="flex-container c-container">
-        <div><img src="./20174146-0.PNG" alt="4146 2017"></div>
-        <p>FRC 4146's 2017 robot was a finalist at the AZ state FRC competition. I worked as the lead engineer.<br>
-          <a href="https://github.com/Sabercat-Robotics-4146-FRC/Robot_CAD-2017" target="_blank"><button>CAD</button></a>
+    <h2>Portfolio</h2>
+    <div class="item">
+      <div class = "item-text">
+        <h3 class = "project-heading">KiP V1 [2018]</h3>
+        <div class="item-text-inner">
+        <p>
+          <h4>What is KiP?</h4>
+          <ul>
+            <li>KiP is an Open-Source Educational Robot</li>
+            <li>KiP was designed to be a low-cost and fully programmable and modular robotics system for middle schoolers, high schoolers, and curious adults.</li>
+            <li>KiP uses a Raspberry Pi that communicates with a custom stepper motor driver PCB.</li>
+            <li>KiP is controlled with a mobile phone app controller.</li>
+          </ul>
+          <h4>What I worked on:</h4>
+          <ul>
+            <li>Mechanical design of actuators, grippers, and display.</li>
+            <li>Server software backend running on the Raspberry Pi with mobile app controller integration.</li>
+          </ul>
+          <p><b>Skills:</b> <i>Mechanical Design, Solidworks, 3D Printing, Python, laser cutting.</i></p>
         </p>
+        </div>
       </div>
-      <div title="4146 2016" class="flex-container c-container">
-        <div><img src="./20164146-0.PNG" alt="4146 2016"></div>
-        <p>FRC 4146's 2016 robot was a finalist at the AZ state FRC competition. I worked as the lead mechanical engineer.<br>
-          <a href="https://github.com/Sabercat-Robotics-4146-FRC/Robot_CAD-2016" target="_blank"><button>CAD</button></a>
+      <div class="item-photos">
+        <img src="./photos/kip-1-heart-eyes.jpg" alt="KiP V1 Heart Eyes">
+        <img src="./photos/kip-1-with-phone.JPG" alt="KiP V1 with Phone">
+      </div>
+      <!-- <div class="item-photos">
+        <img src="./photos/kip-1-with-phone.JPG" alt="KiP V1 with Phone">
+      </div> -->
+    </div>
+
+    <!-- KiP V2 -->
+    <div class="item">
+      <div class = "item-text">
+        <h3 class = "project-heading">KiP V2 [2019]</h3>
+        <div class="item-text-inner">
+        <p>
+          <h4>What changed from V1?</h4>
+          <ul>
+            <li>Next iteration of KiP is nearly fully 3D printed.</li>
+            <li>Improved stepper motor driver PCB.</li>
+            <li>New version is lower cost and more approachable.</li>
+          </ul>
+          <h4>What I worked on:</h4>
+          <ul>
+            <li>Designed the robot in Solidworks. 3D printed, assembled, and tested robot systems.</li>
+            <li>Programmed stepper motor driver PCB (Atmega2560) firmware for controlling stepper motors speed and position with I2C communication to the Raspberry Pi. (C++)</li>
+            <li>Programmed the HTTP server running on the Raspberry Pi as well as I2C interface and mobile app UDP communication. (Python, node.js)</li>
+            <li>Assisted in the programming of the KiP controller mobile app in React Native.</li>
+            <li>Presented the robotics system to a group of primary and middle school students at an Arizona Science Center Summer Camp to gain user feedback.</li>
+          </ul>
+          <p><b>Skills:</b> <i>Mechanical Design, Solidworks, 3D Printing, Python, AVR C++ Embedded Programming, node.js.</i></p>
         </p>
+        </div>
+      </div>
+      <div class="item-photos">
+        <img src="./photos/kip-2-squint.JPG" alt="KiP V2 Squint">
+        <img src="./photos/kip-2-4.jpg" alt="KiP V2 x4">
       </div>
     </div>
 
-    <div class="flex-container">
-      <div class="flex-container c-container">
-        <div><img src="./FEA-1.PNG" alt="FEA Optimization"></div>
-        <p>I have experience with FEA software, topology optimization, and load-weight optimization. I have experience with Fusion 360 and Solidworks.</p>
+
+    <!-- HPE/GS KiP -->
+    <div class="item">
+      <div class = "item-text">
+        <h3 class = "project-heading">HPE/GS KiP [2019]</h3>
+        <div class="item-text-inner">
+        <p>
+          <h4>What is HPE/GS KiP?</h4>
+          <ul>
+            <li>HPE/GS KiP was a spinoff project from the KiP robot. The project was in partnership with Hewlett-Packard Enterprise and the Girl Scouts of America.</li>
+            <li>The aim of the project was to redesign the Robotics badge curriculum for the Girl Scouts of America. The technical outcomes of the project were to design a version of KiP that integrated with an ESP32 based board that HPE designed for underprivileged schools.</li>
+          </ul>
+          <h4>What I worked on:</h4>
+          <ul>
+            <li>Designed the robot in Solidworks.</li>
+            <li>Coordinated design of the KiP “Hat” PCB for HPE’s PCB.</li>
+            <li>Programmed the firmware for HPE’s PCB to control the stepper motors on the robot. </li>
+            <li>Wrote HPE/GS KiP API for young children to program robots.</li>
+            <li>Programmed a demo station drawing game using OpenCV on a Jetson.</li>
+            <li>Conducted extensive user feedback testing at the Girl Scouts of America convention.</li>
+          </ul>
+          <p><b>Skills:</b> <i>Mechanical Design, Solidworks, 3D Printing, Python, AVR C++ Embedded Programming, node.js.</i></p>
+        </p>
+        </div>
       </div>
-      <div class="flex-container c-container">
-        <div><img src="./End Mill.PNG" alt="End Mill" style="max-height: 15vw;"></div>
-        <p>Plasma table, CNC router, and Tormach CAM, operation, and maintenance. Tube bending and extensive sheet metal fabrication. </p>
+      <div class="item-photos">
+        <img src="./photos/hpe-kip-eyes.jpg" alt="HPE/GS KiP Glow Eyes">
+        <img src="./photos/hpe-kip-mascot.JPG" alt="HPE/GS KiP with Mascot">
+        <!-- <img src="./photos/hpe-kip-drive.gif" alt="HPE/GS KiP Driving"> -->
 
       </div>
-      <div class="flex-container c-container">
-        <div><img src="./Thing Brake.PNG" alt="Thing Brake" style="max-height: 15vw;"></div>
-        <p>Design and implementation from concept to final iteration. CAD, CAM, FEA, optimization, manufacturing, and testing.</p>
+      <!-- <div class="item-photos">
+        <img src="./photos/hpe-kip-drive.gif" alt="HPE/GS KiP Driving">
+      </div> -->
+    </div>
 
+
+    <!-- VELOS -->
+    <div class="item">
+      <div class = "item-text">
+        <h3 class = "project-heading">VELOS [2020]</h3>
+        <div class="item-text-inner">
+        <p>
+          <h4>What is VELOS?</h4>
+          <ul>
+            <li>VELOS was a proposal for the 2020 NASA BIG Idea Challenge.</li>
+            <li>VELOS is a system for exploring Permanently Shadowed Regions (PSRs) of the lunar surface.</li>
+            <li>The system is comprised of a spring-loaded launcher system that launches networked science probes up to 100m on the lunar surface.</li>
+            <li>VELOS won the “Innovation Award” at the BIG Idea Forum</li>
+          </ul>
+          <h4>What I worked on:</h4>
+          <ul>
+            <li>Designed the launcher mechanical system in Solidworks including novel spring launcher plunger and release assembly.</li>
+            <li>CNC Machined and assembled the launcher.</li>
+            <li>CNC Machined the probe PCB HDPE enclosure and high porosity carbon impact absorption foam.</li>
+            <li>Designed the auxiliary VELOS loading machine.</li>
+            <li>Conducted extensive device testing and iterative modifications to reach launching capacity. Conducted Cryo-vacuum testing to advance device to TRL 4.</li>
+          </ul>
+          <h4>Relevant Links:</h4>
+          <ul>
+            <li><a href="https://news.asu.edu/20201130-solutions-asu-students%E2%80%99-lunar-exploration-system-finalist-nasa-competition" target="_blank">[ARTICLE] ASU students’ lunar exploration system is a finalist in NASA competition</a></li>
+            <li><a href="https://www.youtube.com/watch?v=Xj1r_x-KBd8" target="_blank">[VIDEO] 2020 BIG Idea Forum Presentation Arizona State University</a></li>
+          </ul>
+          <p><b>Skills:</b> <i>Mechanical Design, Solidworks, 3D Printing, Python, AVR C++ Embedded Programming, node.js.</i></p>
+        </p>
+        </div>
+      </div>
+      <div class="item-photos">
+        <img src="./photos/velos-launcher.jpg" alt="VELOS Launcher">
+        <img src="./photos/velos-probe-frozen.jpg" alt="VELOS Probe Frozen">
+        <img src="./photos/velos-probe-inner.jpg" alt="VELOS Probe Inner">
       </div>
     </div>
 
-    <div class="flex-container-bottom">
-      <div class="name-box">
-        <span style="font-size: 2vw;">G M ROWLAND</span><br><br>
-        <span>TEL: 602.582.3749</span><br>
-        <a href="mailto:g@gmichaelrowland.com?subject=feedback" style="text-decoration: none;color:black;">EMAIL: G<b>@</b>GMICHAELROWLAND.COM</a>
+
+    <!-- Training Landmine Device [2021] -->
+    <div class="item">
+      <div class = "item-text">
+        <h3 class = "project-heading">Training Landmine Device [2021]</h3>
+        <div class="item-text-inner">
+        <p>
+          <h4>What is this Training Landmine Device?</h4>
+          <ul>
+            <li>The Landmine Training Device was designed to assist the USMC with training soldiers to locate landmines.</li>
+            <li>The device imitates a subterranean landmine and “detonates” a harmless powder to simulate an explosion during wargames training.</li>
+          </ul>
+          <h4>What I worked on:</h4>
+          <ul>
+            <li>Designed mechanical landmine system in Solidworks. Including strain guage selection and high-pressure pneumatic plumbing and solenoid system.</li>
+            <li>Conducted subterranean soil stress analysis calculations to determine landmine loading underground with different vehicle conditions. </li>
+            <li>Manufactured and fabricated three training landmine units for the USMC and NSIN to demonstrate and provide feedback.</li>
+          </ul>
+          <h4>Relevant Links:</h4>
+          <ul>
+            <li><a href="https://www.youtube.com/watch?v=UpEtJEM_Viw" target="_blank">[VIDEO] Training Landmine Fabrication</a></li>
+          </ul>
+          <p><b>Skills:</b> <i>Mechanical Design, Solidworks, 3D Printing, Python, AVR C++ Embedded Programming, node.js.</i></p>
+        </p>
+        </div>
       </div>
-      <div style="max-width: 40vw; margin-top: 4vw; font-size: 0.75vw;">
-        <b>BIO:</b> I'm an engineering student at ASU. I enjoy mechanical and
-        software engineering. Proficient in Solidworks and Fusion 360 (CAD, FEA, CAM). I do a lot of FRC mentoring for team 4146.
-      </div>
-      <div class="boxed">
-        <table style="float: left; padding: 0.1vw;">
-          <tr>
-            <th>INFO</th>
-          </tr>
-        <tr><td><a href="./Resume.pdf" target="_blank" style="color: black; text-decoration: none;">RESUME</a></td></tr>
-        <tr><td><a class="code-button">[CODE]</a></td></tr>
-        </table>
-        <span class="version-logo">A0-1</span>
+      <div class="item-photos">
+        <img src="./photos/training-landmine-crate.jpg" alt="VELOS Launcher">
+        <img src="./photos/training-landmine-active.jpg" alt="VELOS Probe Frozen">
+        <img src="./photos/training-landine-underground.jpg" alt="VELOS Probe Inner">
       </div>
     </div>
-  </div>
 
-  <div class="code-container">
-    <div class="flex-container-top">
-    <div class="mech-icon">
-      <img src="./Wrench.PNG" alt="Mechanical Portfolio" title="Mechanical Portfolio" style="width: 10vw;">
+    <!-- Project Spyral [2021] -->
+    <div class="item">
+      <div class = "item-text">
+        <h3 class = "project-heading">Project Spyral [2021]</h3>
+        <div class="item-text-inner">
+        <p>
+          <h4>What is this Project Spyral?</h4>
+          <ul>
+            <li>Spyral is an internal Luminosity Lab project to design an active tripod for hobbyist astrophotography.</li>
+          </ul>
+          <h4>What I worked on:</h4>
+          <ul>
+            <li>Designed a version of Spyral that is constructed of rigid sheet metal in Solidworks.</li>
+            <li>Programmed the stepper driver firmware backend. (Utilized the same custom PCB stack as KiP)</li>
+            <li>Programmed scripts for determining the altitude and azimuth position of celestial objects relative to the tripod camera position based on geolocation and time using Astropy.</li>
+            <li>Worked with industrial designer on designing a case enclosure.</li>
+            <li>Worked with React app developer and backend developer on hardware-software integration.</li>
+          </ul>
+          <p><b>Skills:</b> <i>Mechanical Design, Solidworks, 3D Printing, Python, AVR C++ Embedded Programming, node.js.</i></p>
+        </p>
+        </div>
+      </div>
+      <div class="item-photos">
+        <img src="./photos/spyral-inner-body.jpg" alt="VELOS Launcher">
+        <img src="./photos/spyral-iso-render.png" alt="VELOS Probe Frozen">
+        <img src="./photos/spyral-sketch.jpg" alt="VELOS Probe Inner">
+      </div>
     </div>
+
+     <!-- Project Spark [2021] -->
+     <div class="item">
+      <div class = "item-text">
+        <h3 class = "project-heading">Project Spark [2021]</h3>
+        <div class="item-text-inner">
+        <p>
+          <h4>What is this Project Spark?</h4>
+          <ul>
+            <li>Project Spark is an engineering project to advance solid oxide microtubular fuel cell (μSOFC) reactors in low volume, low mass, high power mobile power generation applications. The fuel cells use any hydrocarbon fuel to chemically generate electricity.</li>
+            <li>The project is in partnership with Dr. Ryan Milcarek’s research on SOFC technology. The device designed brings the fuel cells out of the lab environment and brings the technology closer to consumer and military applications.</li>
+          </ul>
+          <h4>What I worked on:</h4>
+          <ul>
+            <li>Designed the fuel cell reactor for manufacturing in Solidworks.</li>
+            <li>Coordinated with ANSYS simulation team for thermal and CFD simulations to ensure critical temperature ranges reached in reformer tubes and fuel cell anode. Extracted thermal data from existing thermodynamic heat of formation models.</li>
+            <li>Manufactured and fabricated reactor device.</li>
+            <li>Conducting lab testing of reactor device to generate at least 30 Watts. (ongoing project)</li>
+          </ul>
+          <p><b>Skills:</b> <i>Mechanical Design, Solidworks, 3D Printing, Python, AVR C++ Embedded Programming, node.js.</i></p>
+        </p>
+        </div>
+      </div>
+      <div class="item-photos">
+        <img src="./photos/spark-render.png" alt="VELOS Launcher">
+        <img src="./photos/spark-reactor-body.jpg" alt="VELOS Probe Frozen">
+        <img src="./photos/spark-insulation.jpg" alt="VELOS Probe Inner">
+      </div>
+    </div>
+
   </div>
-    <div class="flex-container"><pre>
-               _____                    _____                    _____
-              /\    \                  /\    \                  /\    \
-             /::\    \                /::\____\                /::\    \
-            /::::\    \              /::::|   |               /::::\    \
-           /::::::\    \            /:::::|   |              /::::::\    \
-          /:::/\:::\    \          /::::::|   |             /:::/\:::\    \
-         /:::/  \:::\    \        /:::/|::|   |            /:::/__\:::\    \
-        /:::/    \:::\    \      /:::/ |::|   |           /::::\   \:::\    \
-       /:::/    / \:::\    \    /:::/  |::|___|______    /::::::\   \:::\    \
-      /:::/    /   \:::\ ___\  /:::/   |::::::::\    \  /:::/\:::\   \:::\____\
-     /:::/____/  ___\:::|    |/:::/    |:::::::::\____\/:::/  \:::\   \:::|    |
-     \:::\    \ /\  /:::|____|\::/    / ~~~~~/:::/    /\::/   |::::\  /:::|____|
-      \:::\    /::\ \::/    /  \/____/      /:::/    /  \/____|:::::\/:::/    /
-       \:::\   \:::\ \/____/               /:::/    /         |:::::::::/    /
-        \:::\   \:::\____\                /:::/    /          |::|\::::/    /
-         \:::\  /:::/    /               /:::/    /           |::| \::/____/
-          \:::\/:::/    /               /:::/    /            |::|  ~|
-           \::::::/    /               /:::/    /             |::|   |
-            \::::/    /               /:::/    /              \::|   |
-             \::/____/                \::/    /                \:|   |
-                                       \/____/                  \|___|
-
-
-[tel: 602.582.3749]                               [email: g@gmichaelrowland.com]
-================================================================================
-
-</pre></div>
-<div class="flex-container">
-  <div class="flex-container-top" style="min-width: 25vw; max-width: 25vw;">
-    <table class="code-table">
-      <tr>
-        <td><a href="https://github.com/GowanR/rust-opt" target="_blank" >rust-opt // N-D swarm algorithm</a>
-          <!-- <p>
-            <span class="lang">RUST</span>
-            An n-dimentional genetic particle swarm algorithm. Solves complex optimization of functions with any number of dimentions.
-          </p> -->
-        </td>
-      </tr>
-      <tr>
-        <td><a href="https://github.com/GowanR/pid-java" target="_blank" >pid-java // PID controller</a></td>
-      </tr>
-      <tr>
-        <td><a href="https://github.com/GowanR/3D-Printing-Valuation" target="_blank" >3D-Printing-Valuation // print cost</a></td>
-      </tr>
-      <tr>
-        <td><a href="https://github.com/GowanR/simple-crypto-chat" target="_blank" >simple-crypto-chat // encrypted coms</a></td>
-      </tr>
-      <tr>
-        <td><a href="https://github.com/GowanR/stats-rs" target="_blank" >stats-rs // computational statistics</a></td>
-      </tr>
-      <tr>
-        <td><a href="https://github.com/GowanR/exchange-lua" target="_blank" >exchange-lua // currency conversions</a></td>
-      </tr>
-      <tr>
-        <td><a href="https://github.com/GowanR/gowanr.github.io" target="_blank" >GMICHAELROWLAND.COM // portfolio site</a></td>
-      </tr>
-      <tr>
-        <td><a href="https://github.com/Sabercat-Robotics-4146-FRC/Robot_Code-2018" target="_blank" >Robot_Code-2018 // FRC 4146 2018</a></td>
-      </tr>
-      <tr>
-        <td><a href="https://github.com/Sabercat-Robotics-4146-FRC/Robot_Code-2017" target="_blank" >Robot_Code-2017 // FRC 4146 2017</a></td>
-      </tr>
-      <tr>
-        <td><a href="https://github.com/Sabercat-Robotics-4146-FRC/Robot_Code-2016" target="_blank" >Robot_Code-2016 // FRC 4146 2016</a></td>
-      </tr>
-      <tr>
-        <td><a href="https://github.com/Sabercat-Robotics-4146-FRC/Sabercat-Robotics-4146-FRC.github.io" target="_blank" >sabercatrobotics.com // FRC 4146</a></td>
-      </tr>
-      <tr>
-        <td><a href="https://github.com/Sabercat-Robotics-4146-FRC/email-blast" target="_blank" >email-blast // mass email web util</a></td>
-      </tr>
-      <tr>
-        <td><a href="https://github.com/Sabercat-Robotics-4146-FRC/Vision_Processing-2016" target="_blank" >Vision_Processing-2016 // opencv</a></td>
-      </tr>
-    </table>
-  </div>
-  </div>
-  <div class="flex-container" style="padding-top: 10vh;"><pre>
-  ================================================================================
-  </pre></div>
-
-</div>
-  <script type="text/javascript" src="./main.js"></script>
-
-  </body>
+<footer> &copy 2021 Gowan Michael Rowland</footer>
+</body>
+  <link rel="stylesheet" href="index-style.css">
 </html>
